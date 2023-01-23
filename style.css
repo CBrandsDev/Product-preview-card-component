@@ -7,6 +7,7 @@
 body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Fraunces', 'Montserrat';
+    
 }
 main {
     min-height: 100vh;
@@ -15,6 +16,22 @@ main {
     justify-content: center;
     align-items: center;
 }
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.attribution {
+    margin-block: 0.5rem;
+    font-size: 0.735rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: #346f59;
+}
+
 
 .card {
     background: hsl(0deg, 0%, 100%);
@@ -23,19 +40,18 @@ main {
     border-radius: 20px;
     overflow: hidden;
     max-width: 375px;
-    border: solid red;
-}
-.imgs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .info {
     padding: 20px;
     background-color: white;
 }
+.imgs img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .subtitle {
-    font-family: 'Fraunces';
     color: hsl(228deg, 12%, 48%);
     text-transform: uppercase;
     font-size: 8;
@@ -48,7 +64,6 @@ main {
     margin-block: 12px;
 }
 .description {
-    font-family: 'Montserrat';
     color: hsl(228deg, 12%, 48%);
     font-size: 12px;
     font-weight: 400;
@@ -84,3 +99,9 @@ button.addtocart {
     font-weight: 700;
     color: hsl(0deg, 0%, 100%)
 }
+@media (hover: hover) {
+    button.addtocart:hover {
+      background-color: #346f59;
+    }
+  }
+
