@@ -16,28 +16,35 @@
   </style>
 </head>
 <body>
-  <main>
-      <header>
-        <img src="./images/image-product-desktop.jpg" alt="perfum">
-        <h1 class="text">Perfume</h1>
-        <h1 class="text1">Gabrielle Essence Eau De Parfum</h1>
-      </header>
-      <div>
-        <p class="information">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-        Perfumer-Creator for the House of CHANEL.</p>
-        <p class="price">$149.99
-          $169.99</p>
-      </div>
-        <button>
-          <img src="./images/icon-cart.svg" alt="cart">
-        <a href="addcartbutton">
-          Add to Cart
-        </a>
-    </button>
-  </main>
+  <main><div class="card">
+      <picture class="imgs">
+        <source media="(min-width: 660px)" srcset="./images/image-product-desktop.jpg">
+        <img src="./images/image-product-mobile.jpg" alt="perfum">
+      </picture>
+      <div class="info">
+        <p class="subtitle">Perfume</p>
+        <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+
+        <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price">
+          <p>$149.99</p>
+          <del class="old_price">
+            <span>$169.99</span>
+          </del>
+        </div>
+        <div class="button">
+          <button class="addtocart" type="button">
+            <img src="./images/icon-cart.svg" alt="cart">
+            Add to Cart
+          </button>
+        </div>
+        </div>
+    </div>
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Calil Brandão</a>.
   </div>
+</main>
 </body>
 </html>
