@@ -54,14 +54,16 @@ main {
 .subtitle {
     color: hsl(228deg, 12%, 48%);
     text-transform: uppercase;
-    font-size: 8;
+    font-size: 12px;
     letter-spacing: 7px;
+    line-height: 0.2px;
     font-weight: 400;    
 }
 .title {
     font-family: 'Montserrat';
     font-weight: 700;
     margin-block: 12px;
+    font-size: 30px;
 }
 .description {
     color: hsl(228deg, 12%, 48%);
